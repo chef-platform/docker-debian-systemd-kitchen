@@ -17,7 +17,7 @@ RUN \
 
 # Basic chef install
   CHEFURL="https://packages.chef.io/stable"; \
-  CHEFDEB=chef_12.16.42-1_amd64.deb; \
+  CHEFDEB=chef_12.19.36-1_amd64.deb; \
   curl -L ${CHEFURL}/debian/8/${CHEFDEB} -o /tmp/${CHEFDEB}; \
   dpkg -i /tmp/${CHEFDEB}; \
   rm -f /tmp/${CHEFDEB}; \
