@@ -15,12 +15,8 @@ RUN \
 # Useful packages
   apt-get install -y iproute sudo less vim tree curl; \
 
-# Basic chef install
-  CHEFURL="https://packages.chef.io/stable"; \
-  CHEFDEB=chef_13.0.113-1_amd64.deb; \
-  curl -L ${CHEFURL}/debian/8/${CHEFDEB} -o /tmp/${CHEFDEB}; \
-  dpkg -i /tmp/${CHEFDEB}; \
-  rm -f /tmp/${CHEFDEB}; \
+# Basic latest chef install
+  curl -L https://omnitruck.chef.io/install.sh | bash; \
   ln -s /opt/chef/bin/chef-client /bin/chef-client; \
 
 # Installing Busser
