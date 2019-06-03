@@ -1,16 +1,16 @@
 docker-debian-systemd-kitchen
 =============================
 
-Docker image for a Debian 8 with a working Systemd, provisionned with Chef
+Docker image for a Debian with a working Systemd, provisionned with Chef
 to be used in Test Kitchen.
 
 Test it easily with:
 
     # Get the image
-    docker pull sbernard/debian-systemd-kitchen
+    docker pull chefplatform/debian-systemd-kitchen
     # Run it (do not forget cgroup volume for systemd)
     docker run -d -v /sys/fs/cgroup:/sys/fs/cgroup:ro --name dsk \
-      sbernard/debian-systemd-kitchen
+      chefplatform/debian-systemd-kitchen
     # Open a shell in it, you can try 'systemctl' for instance
     docker exec -it dsk bash -c 'TERM=xterm bash'
     # Kill and remove the container
