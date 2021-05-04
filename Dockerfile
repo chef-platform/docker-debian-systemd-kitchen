@@ -4,7 +4,7 @@ MAINTAINER Samuel Bernard "samuel.bernard@gmail.com"
 # Let's run stuff
 RUN \
 # Classic yum update
-  apt-get update; apt-get dist-upgrade -y; \
+  apt-get update; apt-get dist-upgrade -y; apt-get install dialog -y; \
   apt-get install systemd -y; \
 # Mask failing services
   systemctl mask -- \
