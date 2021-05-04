@@ -13,7 +13,7 @@ RUN \
     systemd-tmpfiles-setup.service \
     systemd-hostnamed.service; \
 # Useful packages
-  apt-get install -y iproute2 sudo less vim tree curl dmidecode; \
+  apt-get install -y iproute2 sudo less vim tree curl dmidecode gpg; \
 # Basic latest chef install
   curl -L https://omnitruck.chef.io/install.sh | bash; \
   ln -s /opt/chef/bin/chef-client /bin/chef-client; \
