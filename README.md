@@ -1,8 +1,8 @@
 docker-debian-systemd-kitchen
 =============================
 
-Docker image for a Debian with a working Systemd, provisionned with Chef
-to be used in Test Kitchen.
+Docker image for latest Debian stable with a working Systemd, provisionned with
+Chef to be used in Test Kitchen.
 
 Test it easily with:
 
